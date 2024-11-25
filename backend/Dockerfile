@@ -16,7 +16,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 ENV GOOGLE_API_KEY=AIzaSyD28q1xpukVhjDYcLlV8fQOqw11fnvN_lk
 
 # Expose the port Flask will run on
-# EXPOSE 5000
+EXPOSE 8080
 
 # Run the application
 CMD ["flask", "run"]
