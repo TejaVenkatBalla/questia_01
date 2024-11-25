@@ -1,2 +1,4 @@
-vertexai
 flask
+google-generativeai
+python-multipart
+python-dotenv
