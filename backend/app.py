@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify
 import os
 import google.generativeai as genai
+from flask_cors import CORS
 
 app = Flask(__name__)
+# Allow CORS for all domains and routes
+CORS(app)
 
 # Configure API key for Google Generative AI
 api_key = os.getenv('GOOGLE_API_KEY')
@@ -85,5 +88,5 @@ def chat_02():
         return jsonify({"error": str(e)}), 500
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
