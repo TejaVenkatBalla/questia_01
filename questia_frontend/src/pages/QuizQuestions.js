@@ -37,6 +37,17 @@ const QuizQuestions = () => {
           rows="4"
           cols="50"
           placeholder="Enter your message"
+          style={{
+            width: "80%",
+            minHeight: "100px",
+            resize: "vertical", // Allow resizing only vertically
+            padding: "10px",
+            fontSize: "16px",
+            lineHeight: "1.5",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+            boxShadow: "inset 0 1px 3px rgba(0, 0, 0, 0.1)",
+          }}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
