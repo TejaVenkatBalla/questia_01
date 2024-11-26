@@ -26,4 +26,5 @@ An AI-driven chatbot designed to help teachers streamline their workflow by auto
 ---
 
 ## **Medium Blog**
-`https://medium.com/@tejavenkatballa/how-to-build-a-chatbot-using-gemini-f0bf22f6a3c6` 
+(https://medium.com/@tejavenkatballa/how-to-build-a-chatbot-using-gemini-f0bf22f6a3c6)
+
