@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { api } from "../api";
 
 const QuizQuestions = () => {
   const [message, setMessage] = useState("");
@@ -6,8 +7,9 @@ const QuizQuestions = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let url = api+"bot_chat"
     try {
-      const res = await fetch("/bot_chat", {
+      const res = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

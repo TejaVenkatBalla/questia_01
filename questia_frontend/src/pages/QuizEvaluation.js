@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { api } from "../api";
 
 const QuizEvaluation = () => {
   const [message, setMessage] = useState("");
@@ -6,8 +7,9 @@ const QuizEvaluation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let url = api+"feedback_bot"
     try {
-      const res = await fetch("/feedback_bot", {
+      const res = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
